@@ -1,0 +1,51 @@
+.transactionHistory {
+  width: 500px;
+  margin: 50px auto 30px;
+  padding: 0;
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: 1px 1px 2px 2px grey;
+}
+
+thead {
+  background-color: rgb(60, 175, 224);
+  padding: 40px 0;
+}
+
+thead tr {
+  color: white;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  text-transform: capitalize;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  color: rgb(148, 138, 138);
+}
+
+th:not(:last-child) {
+  border-right: 1px solid grey;
+}
+
+td:not(:last-child) {
+  border-right: 1px solid grey;
+}
+
+th,
+td {
+  display: flex;
+  justify-content: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 12px 0;
+}
+
+tr:nth-child(2n) {
+  background-color: lightgrey;
+}
